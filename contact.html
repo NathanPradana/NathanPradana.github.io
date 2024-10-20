@@ -73,68 +73,66 @@
         <!-- Header End -->
 
 
-<!-- Contact Start -->
-<div class="container-fluid contact py-5" style="background-color: none; background: #025d0063;">
-    <div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-        <div class="col-lg-7 col-xl-7 contact-form wow fadeInLeft" data-wow-delay="0.1s">
-            <div class="section-title mb-5 wow fadeInUp text-center" data-wow-delay="0.1s">
-            </div>
-            <h2 class="display-5 text-dark mb-2 text-center">Customer Support</h2>
-            <p class="mb-4 text-dark text-center">If you face any problem and need some help, feel free to contact us by filling this form below.<a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form"></a></p>
-            <form>
-                <div class="row g-3">
-                    <!-- Name Field -->
-                    <div class="col-lg-12 col-xl-6">
-                        <label for="name" class="form-label text-dark">Your Name</label>
-                        <div class="form-floating">
-                            <input type="text" class="form-control bg-transparent border" id="name" placeholder="Your Name">
+        <!-- Contact Start -->
+        <div class="container-fluid contact py-5" style="background-color: none; background: #025d0063;">
+            <div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+                <div class="col-lg-7 col-xl-7 contact-form wow fadeInLeft" data-wow-delay="0.1s">
+                    <h2 class="display-5 text-dark mb-2 text-center">Customer Support</h2>
+                    <p class="mb-4 text-dark text-center">If you face any problem and need some help, feel free to contact us by filling this form below.</p>
+                    <form id="supportForm">
+                        <div class="row g-3">
+                            <!-- Name Field -->
+                            <div class="col-lg-12 col-xl-6">
+                                <label for="name" class="form-label text-dark">Your Name</label>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-transparent border" id="name" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <!-- Email Field -->
+                            <div class="col-lg-12 col-xl-6">
+                                <label for="email" class="form-label text-dark">Your Email</label>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-transparent border" id="email" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <!-- Phone Field -->
+                            <div class="col-lg-12 col-xl-6">
+                                <label for="phone" class="form-label text-dark">Your Phone</label>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control bg-transparent border" id="phone" placeholder="Phone" pattern="[0-9]{10,15}" title="Phone number should be 10 to 15 digits" required>
+                                </div>
+                            </div>
+                            <!-- Project Field -->
+                            <div class="col-lg-12 col-xl-6">
+                                <label for="project" class="form-label text-dark">Your Project</label>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-transparent border" id="project" placeholder="Project">
+                                </div>
+                            </div>
+                            <!-- Subject Field -->
+                            <div class="col-12">
+                                <label for="subject" class="form-label text-dark">Subject</label>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-transparent border" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <!-- Message Field -->
+                            <div class="col-12">
+                                <label for="message" class="form-label text-dark">Message</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-transparent border" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Email Field -->
-                    <div class="col-lg-12 col-xl-6">
-                        <label for="email" class="form-label text-dark">Your Email</label>
-                        <div class="form-floating">
-                            <input type="email" class="form-control bg-transparent border" id="email" placeholder="Your Email">
-                        </div>
-                    </div>
-                    <!-- Phone Field -->
-                    <div class="col-lg-12 col-xl-6">
-                        <label for="phone" class="form-label text-dark">Your Phone</label>
-                        <div class="form-floating">
-                            <input type="phone" class="form-control bg-transparent border" id="phone" placeholder="Phone">
-                        </div>
-                    </div>
-                    <!-- Project Field -->
-                    <div class="col-lg-12 col-xl-6">
-                        <label for="project" class="form-label text-dark">Your Project</label>
-                        <div class="form-floating">
-                            <input type="text" class="form-control bg-transparent border" id="project" placeholder="Project">
-                        </div>
-                    </div>
-                    <!-- Subject Field -->
-                    <div class="col-12">
-                        <label for="subject" class="form-label text-dark">Subject</label>
-                        <div class="form-floating">
-                            <input type="text" class="form-control bg-transparent border" id="subject" placeholder="Subject">
-                        </div>
-                    </div>
-                    <!-- Message Field -->
-                    <div class="col-12">
-                        <label for="message" class="form-label text-dark">Message</label>
-                        <div class="form-floating">
-                            <textarea class="form-control bg-transparent border" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                        </div>
-                    </div>
-                    <!-- Submit Button -->
-                    <div class="col-12">
-                        <button class="btn btn-primary w-100 py-3">Send Message</button>
-                    </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
-<!-- Contact End -->
+        <!-- Contact End -->
 
 
 
@@ -197,11 +195,22 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
-    </body>
 
+        <!-- Form Submission Script -->
+<!-- Form Submission Script -->
+<script>
+    document.getElementById('supportForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Display an alert message
+        alert('Form submitted successfully!');
+
+        // Reset the form fields to empty
+        this.reset();
+    });
+</script>
+    </body>
 </html>
